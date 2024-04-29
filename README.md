@@ -3,6 +3,7 @@
 **Project Overview**
 
 **Objective:** Implement a VAE for feature learning and image generation using 5K skin lesion images from the HAM10000 dataset.
+
 **Architecture:** The VAE comprises an encoder and decoder. The encoder transforms input images into a lower-dimensional latent space representation, while the decoder reconstructs the original images from the latent space.
 
 **Training Process**
@@ -15,6 +16,7 @@
 - Batch size: 32
 - Learning rate: 1e-3
 - Number of epochs: 100
+  
 **Performance:** While the results are not perfect, the VAE showed significant improvement with optimized hyperparameters and the reconstructed image shows the main characteristics of the original image and it is visible that the reconstruction is for a skin lesion image.
 
 ---
@@ -62,6 +64,9 @@ Normal Classes = [0, 2, 5, 6]
 **Performance:** Overall, the model did not perform well when reconstructing the image, however, after changing the hyper-parameters it did improve, which is the main objective rather than having a perfect model, plus, we learnt a lot!
 
 **Future Improvements:** Future improvements for this model include incorporating convolutional neural networks (CNNs) to capture more intricate patterns in the images. Additionally, proper normalization of the images and addressing class imbalance issues, possibly by utilizing techniques such as Variational Autoencoders (VAEs), could enhance the model's performance.
+
+
+**Note**: Both projects utilized the HAM10000 dataset. However, during the loading process, the pixel values were extracted in tabular form. This approach may have introduced a discrepancy, as the visualization of the images revealed a decrease in quality. Addressing this issue is essential to ensure accurate representation and analysis of the dataset.
 
 
 Thanks for checking this repo out :)
